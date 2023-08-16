@@ -7,7 +7,7 @@ const AdminDashboard = () => {
     <div>
       <AdminNavBar />
     <div className={styles.dashboard}>
-      <a href="/admin/adduser"className={styles.card}>
+      <a href="/signup"className={styles.card}>
       <div >
         <div className={styles.icon}>
           <img src="../assets/customerdata.png" width={100}/>

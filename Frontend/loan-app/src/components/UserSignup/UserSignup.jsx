@@ -96,7 +96,19 @@ const UserSignup = () => {
       return;
     }
 
-    signup(form)
+    //signup(form)
+    signup(form).then((res)=>{
+      console.log(form)
+      if(res.success == true)
+      {
+        alert("user got registered");
+      }
+      
+      else 
+      {
+       alert("invalid Credentials"); 
+      }
+      })
     console.log(form);
   }
 

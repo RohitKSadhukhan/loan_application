@@ -9,6 +9,7 @@ export async function signup(data){
             ...data,
         })
         // const token = res.data.token
+        return{success:true,data:res.data}
     }
 
     catch(error){

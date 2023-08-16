@@ -26,6 +26,7 @@ const LoginPage = () => {
     console.log(form)
     if(res.success == true)
     {
+      sessionStorage.setItem("id",form.id);
       window.location.href = "/dashboard";
     }
     
