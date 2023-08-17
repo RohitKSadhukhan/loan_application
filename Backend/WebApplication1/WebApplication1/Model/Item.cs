@@ -9,7 +9,7 @@ namespace WebApplication1.Model
         [Key]
         [Column(TypeName = "varchar(6)")]
         public string item_id { get; set; }
-
+        
         [Required]
         [Column(TypeName = "varchar(25)")]
         public string item_description { get; set; }

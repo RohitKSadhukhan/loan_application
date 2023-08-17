@@ -5,6 +5,11 @@ import styles from './NavBar.module.css';
 import React from 'react';
 
 function NavBar() {
+const home = ()=>{
+  window.location.href = "/";
+  sessionStorage.removeItem("id");
+}
+
   return (
     <>
       <Navbar className={styles.navbar}>
@@ -14,7 +19,7 @@ function NavBar() {
           </div>
           <Nav className="me-auto">
             <Nav.Link href="/dashboard"style={{color: 'white'}}>Dashboard</Nav.Link>
-            <Nav.Link href="/login" style={{color: '#FFB500'}}>Logout</Nav.Link>
+            <Nav.Link onClick={home} style={{color: '#FFB500'}} >Logout</Nav.Link>
           </Nav>
       </Navbar>
     </>
